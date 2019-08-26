@@ -1,0 +1,48 @@
+HC-05 bluetooth module
+
+Pins:
+------------------------
+State
+Rx
+Tx
+Ground
+Vcc  (+5V)
+Enable/Key
+Led
+
+Functionalities:
+-----------------------------
+
+1. Enable - This pin is used to toggle between the data Mode(set low) 
+and AT command mode (set high). BY default it is in data mode.
+
+2. Vss - Power the module connected to the +5V
+
+3.Ground - ground pin of the module, connct to the system ground.
+
+4. transmitter (t=Tx) - Transmits the serial Data. Everything recieved via Bluetooth
+will be given ut by this pin
+
+5.reciever- Recieve the serial data given to the pin will be broadcasted via bluetooth
+
+6. state - the state pin is connected to on board the LED, it can be used as a 
+feedback to check if the bluetooth is working properly
+
+7. LED  blinks once every 2 sec: Module has enterd command mode
+	Reapeted blinking: Waiting for the connection in Data Mode
+	Blink twice in 1 sec: COnnectiona successfulin data MOde
+
+8. Button - USed to control the Key/Enable pin to toggle between the data and
+Command mode
+
+HC-05 Default settings
+----------------------------------------------
+
+Default Bluetooth Name - "HC-05"
+ "	Password- 1234 or 0000
+ "	communication: slave
+ "	Mode: Data Mode
+Data Mode Baud Rate: 9600,8(8 bit data),N (no parry bit) , 1 (stop signal)
+command MOde Baud Rate : 33400,8,N,1
+Default firmware: LINVOR
+
